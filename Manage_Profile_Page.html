@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Management</title>
+    <style>
+        body {
+                background-image: url(Background.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #339c9f;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+            transition: transform 0.5s ease;
+            }
+
+        .container:hover {
+            transform: translateY(-5px);
+            }
+
+        h1 {
+            font-family: Optima;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #444;
+            }
+
+        .form-group {
+            margin-bottom: 30px;
+            transform: scale(1);
+            transition: transform 0.5s ease;
+            }
+
+        .form-group:hover {
+            transform: scale(1.05);
+            }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #444;
+            font-family: Wawati SC;
+            }
+
+        input,
+        select {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            background-color: #fff;
+            color: #444;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+            }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.4);
+            }
+
+        select {
+            height: 45px;
+            }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: Wawati SC;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+            }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+            box-shadow: 0px 0px 10px rgba(0, 128, 0, 0.4);
+            }
+    </style>
+  </head>
+ <body>
+    <div class="container">
+      <h1>Profile Management</h1>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Old Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+        <div class="form-group">
+          <label for="password">New Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit">SAVE CHANGES</button>
+      </form>
+    </div>
+    <script>
+        const form = document.querySelector('#profile-form');
+
+        form.addEventListener('submit')
+    </script>
+  </body>
+</html>

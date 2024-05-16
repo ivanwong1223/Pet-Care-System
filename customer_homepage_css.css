@@ -1,0 +1,123 @@
+body{
+    background-image: url(images/homebg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav{
+    box-shadow: 0 0.4rem 1.4rem rgb(0 0 0 / 11%);
+}
+.d-flex{
+    width: 300px;
+}
+.nav-item{
+    padding: 5px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-brand{
+    margin-left: 20px;
+    padding: 0%;
+    padding-bottom: 0%;
+    margin-right: 0%;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+form[role="search"] {
+    margin-right: auto;
+}
+.container{
+    width: 80px;
+}
+
+.desc{
+    position: center;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: #876445;
+    background-color: #ffffffb0;
+    margin-left: 10%;
+    width: 80%; 
+    border: 2px solid #7f542f;
+    border-bottom: 0;
+}
+
+.service_desc{
+    margin-top: 10px;
+    position: center;
+    background-color:#876445b0;
+    color: white;
+    border-top: 2px solid #7f542f;
+}
+
+.grooming,.boarding,.vet{
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.servicebtn{
+    background-color: rgb(255,235,205);
+    border: 2px solid #7f542f;
+    border-radius: 12px;
+}
+
+.servicebtn:hover{
+    border-color: white;
+    background-color: transparent;
+}
+
+.abt_us{
+    border-top: 2px solid #7f542f;
+    text-align: justify;
+    padding: 20px;
+    background-color: #eddfb3b0;
+}
+
+.aboutUs{
+    width: 50px;
+    height: 50px;
+    overflow: auto;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+}
+
+#floatLeft{
+    float: left;
+    margin-right: 20px;
+}
+
+#floatRight{
+    float: right;
+}
+
+footer{
+    border-top: 2px solid #7f542f;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #000000b0;
+    font-size: x-large;
+    color: white;
+    font-family: 'Play', sans-serif;
+    text-align: justify;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+tab {
+    display: inline-block;
+    margin-left: 100px;
+}

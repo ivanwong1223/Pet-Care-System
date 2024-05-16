@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-image: url(Background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        }
+
+        .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #339c9f;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 32px;
+        color: #444;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+        margin-bottom: 30px;
+        }
+
+        label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #444;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        textarea {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 2
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Feedback Form</h1>
+      <form id="feedback-form">
+        <div class="form-group">
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>How satisfied are you with our service?</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="satisfied-1" name="satisfied" value="very-satisfied">
+            <label for="satisfied-1">Very satisfied</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="satisfied-2" name="satisfied" value="satisfied">
+            <label for="satisfied-2">Satisfied</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="satisfied-3" name="satisfied" value="neutral">
+            <label for="satisfied-3">Neutral</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="satisfied-4" name="satisfied" value="dissatisfied">
+            <label for="satisfied-4">Dissatisfied</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="satisfied-5" name="satisfied" value="very-dissatisfied">
+            <label for="satisfied-5">Very dissatisfied</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+        const form = document.getElementById('feedback-form');
+        const feedback = document.getElementById('feedback');
+        const satisfaction = document.getElementsByName('satisfied');
+
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+        let checkedValues = [];
+        for (let i = 0; i < satisfaction.length; i++) {
+            if (satisfaction[i].checked) {
+            checkedValues.push(satisfaction[i].value);
+            }
+        }
+        if (checkedValues.length === 0) {
+            alert('Please select your level of satisfaction.');
+            return;
+        }
+        const data = {
+            feedback: feedback.value,
+            satisfied: checkedValues
+        };
+        console.log(data);
+        alert('Thank you for your feedback!');
+        form.reset();
+        });
+    </script>
+  </body>
+</html>

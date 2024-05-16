@@ -1,0 +1,61 @@
+/*body design*/
+body{
+    text-align: center;
+    font-family: "DM Sans";
+}
+
+/*login heading design*/
+h2{
+  font-size: 43px;
+  margin: 0px;
+  color: #333333;
+}
+
+/*description below login heading*/
+p{
+  color: #999999;
+}
+
+/*input design*/
+#userEmail{
+  width: 340px;
+  height: 45px;
+  border:1px solid #dadada;
+  border-radius: 5px;
+  padding-left: 12px;
+  margin: 6px;
+}
+
+#userPass{
+  width: 340px;
+  height: 45px;
+  border:1px solid #dadada;
+  border-radius: 5px;
+  padding-left: 12px;
+  margin: 6px;
+}
+
+/*login button*/
+#login{
+    width: 340px;
+    height: 45px;
+    cursor:pointer; 
+    background-color:#13e85e; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#login:hover, #login:active, #login:focus{
+  background-color: #13d658;
+}
+
+a{
+  color: #399Dff;
+  text-decoration: none;
+}
+
+.remember{
+  margin-right: 210px;
+}

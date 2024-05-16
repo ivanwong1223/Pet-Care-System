@@ -1,0 +1,124 @@
+body{
+    background-image: url(img/reportBackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.711);
+    font-size: 40px;
+    text-shadow: .3rem .3rem 0 rgba(0, 0, 0, .15);
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.tableDesign{
+    margin: 20px 80px 40px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.lvl1-table{
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.lvll1-table td, .lvl1-table th {
+    text-align: center;
+    border: 3px solid black;
+    padding: 8px;
+}
+
+.lvl1-table td {
+    text-align: center;
+    border: 3px solid black;
+    font-size: 17px;
+    padding: 4px;
+}
+
+.lvl1-table thead th {
+    color: black;
+    background: #eab170;
+}
+
+.lvl1-table thead th:nth-child(odd) {
+    
+    background: #fdd8ae;
+}
+
+.lvl1-table tr:nth-child(even) {
+
+    background: #F8F8F8;
+}
+
+.status-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.accept{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 330px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #4FC3A1;
+}
+
+.cancel{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 330px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #ff6961;
+}
+
+.pending{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 330px;
+    margin-left: 10px;
+    padding: 10px;
+    background: orange;
+}
+
+.status-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.req-cancel{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 330px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #F6f866;
+}
+
+.complete{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 330px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #3ae0af;
+}

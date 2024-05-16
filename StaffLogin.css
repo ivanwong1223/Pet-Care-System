@@ -1,0 +1,58 @@
+/*body design*/
+body{
+    text-align: center;
+    font-family: "DM Sans";
+    background-image: url(img/staffBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img{
+    margin-left: 650px;
+    margin-top: 30px;
+}
+
+/*login heading design*/
+h2{
+  font-size: 43px;
+  margin: 0px;
+  margin-left: 650px;
+  color: #333333;
+}
+
+/*description below login heading*/
+p{
+  color: #999999;
+  margin-left: 650px;
+}
+
+/*input design*/
+input{
+  width: 340px;
+  height: 45px;
+  border:1px solid #dadada;
+  border-radius: 5px;
+  padding-left: 12px;
+  margin: 6px;
+  margin-left: 650px;
+}
+
+/*login button*/
+#login{
+    cursor:pointer; 
+    background-color:#13e85e; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#login:hover, #login:active, #login:focus{
+  background-color: #13d658;
+}
+
+/*invalid message*/
+.message{
+  margin-left: 635px;
+}
